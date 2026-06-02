@@ -231,6 +231,18 @@ irm get.scoop.sh -outfile 'install.ps1'
 
 Scoop 的官方文档对于新手非常友好，推荐阅读 [官方文档](https://github.com/ScoopInstaller/Scoop) 或 [快速入门](https://github.com/ScoopInstaller/Scoop/wiki/Quick-Start) 。
 
+<<<<<<< HEAD
 ### Git
 
 推荐阅读 [《Git 学习笔记》](https://ideepspace.gitbooks.io/git/content/) 重点关注里面的分支管理以及里面的 *第五部分* 。
+=======
+## 五、技术栈
+- 核心框架：uni-app
+- 导航：
+- 状态管理：
+- UI框架：wot-ui
+- 地图：
+- 存储：
+- 网络请求：
+- 样式：
+>>>>>>> bf1be9e7bbd7f1b8ee704c7aa6865b7e2981c065
