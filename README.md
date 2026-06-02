@@ -2,13 +2,21 @@
 
 ## 前言
 
-本仓库主要用于本小组在大四上学期的两门小组作业。分别是项目实训和 uni-app
+本仓库为多端旅游预订平台，基于 uni-app 和 Spring Boot，包括前端的主体小程序、后台管理系统以及后端。
 
-## 一、本仓库使用方法
+## 一、技术栈
+
+- 前端小程序：uni-app + Vue.js
+- 后台管理系统：基于 Vue 和 shacn-vue 组件库
+- 后端：Springboot
+- 数据库：MySQL
+
+## 二、本仓库使用方法
 
 ### 1. 环境准备
 
 在开始之前，请确保你的电脑已经安装了 Git 。
+
 - Windows 用户推荐使用 [Git for Windows](https://git-scm.com/download/win) 或 [Scoop](#scoop) ；
 
 安装完成后，请进行基础的用户名和邮箱配置。
@@ -24,7 +32,7 @@ git config --global user.email "你的邮箱@example.com"
 
 ````Bash
 # 克隆远程仓库到本地
-git clone http://154.222.28.16:3000/Top_Gun/Group_Work
+git clone 仓库地址
 ````
 
 建议先通过命令行完成首次克隆，然后使用 VSCode 打开克隆到本地的文件夹来进行后续的开发和 Git 操作。本地推送前，请确保根目录下的 .gitignore 文件有屏蔽诸如 node_modules 文件夹，来防止将一些不必要的大文件推送至 Gitea 而浪费大量时间。
@@ -47,7 +55,6 @@ git clone http://154.222.28.16:3000/Top_Gun/Group_Work
 
 如果提示 “no tracking information” ，则说明本地分支和远程分支的链接关系没有创建，需要在 VSCode 上选择链接远程分支。
 
-
 #### 第4步：创建合并请求
 
 推送成功后，打开 Gitea 仓库的网页。通常 Gitea 会自动提示你刚刚推送了新分支，并显示一个“创建合并请求”的按钮。
@@ -62,7 +69,7 @@ git clone http://154.222.28.16:3000/Top_Gun/Group_Work
 
 合并完成后，开发分支使命就结束了。可以安全地删除它。
 
-## 二、项目结构
+## 三、项目结构
 
 ````
 ./
@@ -73,19 +80,15 @@ git clone http://154.222.28.16:3000/Top_Gun/Group_Work
 ├── frontend/               #前端
 │   └── src/
 │       └── ... (源代码)
-├── docs/                   #手册文件
-│   ├── guides/             #说明文档
-│   │   └── ...
-│   └── reference/          #技术手册
-│       ├── api/
-│       │   └── ...
-│       └── ...
+├── Dashboard/              #后台
+│   └── src/
+│       └── ... (源代码)
 └── .gitignore              #用于屏蔽某些文件或文件夹上传至 git
 └── README.md
 ````
 
-## 三、文档排版
-  
+## 四、文档排版
+
 ### 1. 排版规范
 
 #### 中英文标点
@@ -138,21 +141,21 @@ git clone http://154.222.28.16:3000/Top_Gun/Group_Work
 
 #### 使用代码块和代码高亮
 
- ```markdown
+```markdown
 ## 代码高亮
 先定位到你的目录，然后输入命令 `ls -al` 即可列出该目录下的所有文件。
 
 ## 代码块
-​```java
+```java
 public class HelloWorld {
        public static void main(String[] args) {
               System.out.println("我的第一个Java程序：Hello World。");
        }
 }
-​```
- ``` 
+```
+```
 
- ### 2、文档行文
+### 2、文档行文
 
 文档在行文编写部分，个人认为 [《给程序员的中文写作指北》](https://blog.csdn.net/weixin_39638014/article/details/112327421) 一文中说明的特别详尽，本节使用原文引用。
 
@@ -196,9 +199,9 @@ public class HelloWorld {
 
 同时引用丰富的链接还可以帮助搜索引擎确定你的权威性——你不光文章写出来了，还指向了靠谱的参考文献，因此搜索引擎也会觉得你这篇文章的靠谱程度很高。
 
-## 四、工具推荐以及安装方式
+## 五、工具推荐以及安装方式
 
-### Scoop 
+### Scoop
 
 #### 为什么使用 Scoop
 
@@ -224,18 +227,10 @@ irm get.scoop.sh -outfile 'install.ps1'
 .\install.ps1 -ScoopDir 'C:\Scoop'
 ````
 
-#### 使用 Scoop<a id="scoop"></a>
+#### 使用 Scoop `<a id="scoop"></a>`
 
 Scoop 的官方文档对于新手非常友好，推荐阅读 [官方文档](https://github.com/ScoopInstaller/Scoop) 或 [快速入门](https://github.com/ScoopInstaller/Scoop/wiki/Quick-Start) 。
-### Git
-推荐阅读 [《Git 学习笔记》](https://ideepspace.gitbooks.io/git/content/) 重点关注里面的分支管理以及里面的 *第五部分* 。
 
-## 五、技术栈
-- 核心框架：uni-app
-- 导航：
-- 状态管理：
-- UI框架：wot-ui
-- 地图：
-- 存储：
-- 网络请求：
-- 样式：
+### Git
+
+推荐阅读 [《Git 学习笔记》](https://ideepspace.gitbooks.io/git/content/) 重点关注里面的分支管理以及里面的 *第五部分* 。
