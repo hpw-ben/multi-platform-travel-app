@@ -88,7 +88,7 @@ git clone 仓库地址
 ````
 
 ## 四、文档排版
-
+  
 ### 1. 排版规范
 
 #### 中英文标点
@@ -141,21 +141,21 @@ git clone 仓库地址
 
 #### 使用代码块和代码高亮
 
-```markdown
+ ```markdown
 ## 代码高亮
 先定位到你的目录，然后输入命令 `ls -al` 即可列出该目录下的所有文件。
 
 ## 代码块
-```java
+​```java
 public class HelloWorld {
        public static void main(String[] args) {
               System.out.println("我的第一个Java程序：Hello World。");
        }
 }
-```
-```
+​```
+ ``` 
 
-### 2、文档行文
+ ### 2、文档行文
 
 文档在行文编写部分，个人认为 [《给程序员的中文写作指北》](https://blog.csdn.net/weixin_39638014/article/details/112327421) 一文中说明的特别详尽，本节使用原文引用。
 
@@ -201,7 +201,7 @@ public class HelloWorld {
 
 ## 五、工具推荐以及安装方式
 
-### Scoop
+### Scoop 
 
 #### 为什么使用 Scoop
 
@@ -227,22 +227,8 @@ irm get.scoop.sh -outfile 'install.ps1'
 .\install.ps1 -ScoopDir 'C:\Scoop'
 ````
 
-#### 使用 Scoop `<a id="scoop"></a>`
+#### 使用 Scoop
 
 Scoop 的官方文档对于新手非常友好，推荐阅读 [官方文档](https://github.com/ScoopInstaller/Scoop) 或 [快速入门](https://github.com/ScoopInstaller/Scoop/wiki/Quick-Start) 。
-
-<<<<<<< HEAD
 ### Git
-
 推荐阅读 [《Git 学习笔记》](https://ideepspace.gitbooks.io/git/content/) 重点关注里面的分支管理以及里面的 *第五部分* 。
-=======
-## 五、技术栈
-- 核心框架：uni-app
-- 导航：
-- 状态管理：
-- UI框架：wot-ui
-- 地图：
-- 存储：
-- 网络请求：
-- 样式：
->>>>>>> bf1be9e7bbd7f1b8ee704c7aa6865b7e2981c065
